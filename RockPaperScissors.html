@@ -1,0 +1,43 @@
+<html>
+<head>
+<script type = "text/javascript">
+function ChangePic(imagename){
+picnum = Math.floor(Math.random() * 5) + 1;
+newpicname = "kit"+picnum+".jpg";
+document.images[imagename].src = newpicname;
+}
+</script>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="styles/myStyles.css" />
+  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<body>
+<img src="kit1.jpg" width="504" height="504" name="kitpic" id = "kitpic" />
+<input type = “button” value = "Click here to change pic" OnClick =
+"ChangePic('kitpic')">
+<div>
+	<h1><center>Rock Paper Scissors</center><h1>
+	<h2><center>Make your choice: </center></h2>
+</div>
+
+<div>
+	<div class="row">
+		<div class="col-xs-4">
+			<img src="rock.jpg" class="img-responsive" alt="Responsive image">
+		</div>
+		<div class="col-xs-4">
+			<img src="paper.jpg" class="img-responsive" alt="Responsive image">
+		</div>
+		<div class="col-xs-4">
+			<img src="scissors.jpg" class="img-responsive" alt="Responsive image">
+		</div>
+	</div>
+</div>
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+</html>
